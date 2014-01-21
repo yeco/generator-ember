@@ -1,1 +1,1 @@
-<%= _.classify(appname) %>.ApplicationAdapter = DS.FixtureAdapter;
+<%= _.classify(appname) %>.ApplicationAdapter = Ember.FixtureAdapter;
