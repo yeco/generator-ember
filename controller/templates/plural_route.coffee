@@ -1,5 +1,5 @@
 <%= _.classify(appname) %>.<%= _.classify(pluralized_name) %>Route = Ember.Route.extend(
   model: ->
-    @get('store').find('<%= _.slugify(name) %>')
-)
+    <%= _.classify(appname) %>.<%= _.classify(name) %>.find(params.<%= _.slugify(name) %>_id);
 
+)

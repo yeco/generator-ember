@@ -47,7 +47,7 @@ You can either get started using the guide in our documentation lower down or vi
 
 ## Usage
 
-* `npm install -g generator-ember`
+* `npm install -g git://github.com/yeco/generator-ember.git`
 * `mkdir myemberapp && cd myemberapp`(The directory's name is your application's name)
 * `yo ember`
 * `npm install -g grunt-mocha`

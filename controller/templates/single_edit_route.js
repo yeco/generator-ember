@@ -1,6 +1,6 @@
 <%= _.classify(appname) %>.<%= _.classify(name) %>EditRoute = Ember.Route.extend({
   model: function(params) {
-    return this.get('store').find('<%= _.slugify(name) %>', this.modelFor('<%= _.slugify(name)%>').id);
+    return <%= _.classify(appname) %>.<%= _.classify(name) %>.find(params.<%= _.slugify(name) %>_id);
   },
   setupController: function(controller, model){
     controller.set('model', model);
@@ -10,4 +10,6 @@
     controller.set('buffer', buffer)
   }
 });
+
+
 
