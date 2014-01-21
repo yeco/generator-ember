@@ -18,7 +18,7 @@ var ModelGenerator = module.exports = function ModelGenerator(args, options, con
     var parts = attr.split(':');
     return {
       name: parts[0],
-      type: parts[1] || 'string'
+      type: parts[1]
     };
   });
 };
